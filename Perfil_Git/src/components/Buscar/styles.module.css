@@ -1,0 +1,24 @@
+.formulario {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  width: 31.4375rem;
+}
+
+.inputform {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding-left: 0.625rem;
+}
+/* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
+.buttonPesquisa {
+  background-color: blue;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s;
+}
