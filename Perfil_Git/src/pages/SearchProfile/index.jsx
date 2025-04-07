@@ -31,7 +31,7 @@ export default function () {
         }}
       >
         <img src={image} alt="Logo Git" style={{ height: "60px" }} />
-        <p style={{ color: "white", fontSize: "3.25rem" }}>Perfil Github</p>
+        <p style={{ color: "white", fontSize: "3.25rem" }}>Perfil <strong>Github</strong></p>
       </div>
       <Buscar
         setProfile={setProfile}

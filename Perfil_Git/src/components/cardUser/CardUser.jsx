@@ -31,7 +31,7 @@ export default function CardUser({ isLoading, isError, data }) {
           </div>
         ) : (
           <div style={{ width: "100%", height: "10rem" }}>
-            <SkeletonTheme baseColor="#e0e0e0fb" highlightColor="#f5f5f5">
+            <SkeletonTheme baseColor="#005CFF" highlightColor="#005CFF">
               <div style={{ height: "100%", width: "100%" }}>
                 <Skeleton
                   style={{
@@ -67,8 +67,8 @@ export default function CardUser({ isLoading, isError, data }) {
               style={{
                 height: "13.75rem",
                 borderRadius: "50%",
-                borderColor: "blue",
-                border: "2px solid blue",
+                borderColor: "#005CFF",
+                border: "2px solid #005CFF",
               }}
             />
           </div>
@@ -85,7 +85,7 @@ export default function CardUser({ isLoading, isError, data }) {
             }}
           >
             <div style={{ height: "20%" }}>
-              <h3 style={{ color: "blue" }}>{data?.name}</h3>
+              <h3 style={{ color: "#005CFF" }}>{data?.name}</h3>
             </div>
             <div style={{ height: "80%" }}>
               {!data.bio ? <p>Sem bio</p> : <p>{data.bio}</p>}
