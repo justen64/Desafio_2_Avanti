@@ -76,18 +76,23 @@ export default function CardUser({ isLoading, isError, data }) {
             style={{
               flex: 3,
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "flex-start",
               flexDirection: "column",
               width: "100%",
-              paddingTop: "1.5rem",
-              gap: 3,
-              paddingLeft: "0.5rem",
+              height: "70%",
+              gap: "1.5rem",
+              paddingLeft: "1.5rem",
+              marginTop: "2.5rem"
             }}
           >
-            <div style={{ height: "20%" }}>
+            <div >
               <h3 style={{ color: "#005CFF" }}>{data?.name}</h3>
             </div>
-            <div style={{ height: "80%" }}>
+            <div
+            style={{
+              overflowY: "auto"
+            }}
+            >
               {!data.bio ? <p>Sem bio</p> : <p>{data.bio}</p>}
             </div>
           </div>

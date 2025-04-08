@@ -9,13 +9,28 @@ export default function () {
   const [isError, setIsError] = useState(false);
 
   return (
+    <div className="container"
+    style={
+      {
+        display: "flex",
+        backgroundImage: `url('../../assets/image.png')`,
+        height: "100vh",
+        width: "100vw",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        justifyContent: "center",
+        alignItems: "center"
+    }}
+    >
+
     <div
       style={{
         display: "flex",
         alignItems: "center",
-        backgroundColor: "black",
-        height: "100vh",
-        width: "100vw",
+        backgroundColor: "#000000",
+        height: "80%",
+        width: "80%",
         flexDirection: "column",
         gap: "2rem",
       }}
@@ -44,6 +59,7 @@ export default function () {
         <></>
       )}
     </div>
+      </div>
     /* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
   );
 }
